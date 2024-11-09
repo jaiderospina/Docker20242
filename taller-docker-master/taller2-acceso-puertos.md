@@ -33,7 +33,7 @@ exit
 ## Paso 3: Accede al sitio localizado enlazado al container
 Para esto debes de obtener el ip de tu máquina virtual, en este caso el IP público, dependiendo del proveedor puedes verlo con el comando, podría ser la interfaz eth0 en algunos casos:
 ```
-ifconfig -a 
+ip add
 ```
 y buscar el IP público o bien con el IP público asignado por tu proveedor de la nube, solo debes acceder desde el navegador como
 ```

@@ -22,7 +22,7 @@ EXPOSE 80
 
 Seguidamente debes crear el archivo "index.html" con una línea de texto
 ```
-Funcionó la creación de tu primer container con <b>Dockerfiles</b>
+Bienvenidos a <b>Dockerfile</b>
 ```
 
 ### Explicación

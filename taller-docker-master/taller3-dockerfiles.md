@@ -3,7 +3,7 @@ Bienvenido a este taller, en este taller aprenderás a crear tu propia image de 
 
 ## Requisitos
 - Haber realizado el [Taller 2](taller2-acceso-puertos.md)
-- Tener un usuario creado en [Docker Hub](https://hub.docker.com/), recordar bien usuario y contraseña
+- Tener un usuario en [Docker Hub](https://hub.docker.com/).
 
 ## Paso 1: Crear el archivo Dockerfile e index.html
 Debes de crear un Dockerfile e index.html con tu editor de línea de comandos favorito o bien clonar este repositorio y ubicarte en la carpeta taller3-source
@@ -11,7 +11,7 @@ Debes de crear un Dockerfile e index.html con tu editor de línea de comandos fa
 Primero debes crear el archivo llamado "Dockerfile" con el siguiente contenido:
 ```
 FROM ubuntu:18.04
-MAINTAINER CloudNativePlusGT
+MAINTAINER TTGColombia
 RUN apt-get update
 RUN apt-get install -y apache2
 RUN rm /var/www/html/*
@@ -27,13 +27,29 @@ Funcionó la creación de tu primer container con <b>Dockerfiles</b>
 
 ### Explicación
 A continuación esta la explicación de cada una de las líneas del Dockerfile
+
+
 FROM indica que se descargará la imagen de ubuntu con el tag 18.04
+
+
 MAINTAINER Indica el nombre del creador del container
+
+
 RUN apt-get update actualiza los repositorios de la imagen descargada
+
+
 RUN apt-get install apache2 instala apache2 en la imagen
+
+
 RUN rm /var/www/html/*  borra cualquier contenido dentrol del container en la carpeta /var/www/html
+
+
 COPY index.html /var/www/html/ copia el archivo index.html dentro del container en la carpeta /var/www/html
+
+
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]  define el comando que se ejecutará dentro del container con docker run
+
+
 EXPOSE 80  El puerto que expone del container será el 80
 
 

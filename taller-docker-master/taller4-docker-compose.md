@@ -3,7 +3,7 @@ Bienvenido a este taller, en el cual aprenderás a utilizar Docker Compose, para
 
 ## Requisitos
 - Haber realizado el [Taller 3](taller3-dockerfiles.md)
-Tener una máquina virtual o instancia en cualquier proveedor de nube como Google Cloud, Azure, Amazon o Digital Ocean, o bien una máquina virtual local. De preferencia con Ubuntu 18.04LTS para estandarizar errores a una distribución y dar soporte en el taller.
+Tener una máquina virtual o instancia en cualquier proveedor de nube como Google Cloud, Azure, Amazon o Digital Ocean, o bien una máquina virtual local. 
 
 ## Paso 1: Descargar Docker Compose e instalarlo
 Para poder descargar Docker Compose debes de ingresar a la página oficial de Docker ubicada en:

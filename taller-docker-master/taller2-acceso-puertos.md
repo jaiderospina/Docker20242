@@ -16,11 +16,11 @@ docker exec -it apache /bin/bash
 ```
 Luego de ingresar al container actualiza el repositorio de ubuntu:
 ```
-apt-get update
+apt update
 ```
 Luego instala Apache con el siguiente comando:
 ```
-apt-get install apache2
+apt install apache2
 ```
 Luego inicia apache con el comando
 ```

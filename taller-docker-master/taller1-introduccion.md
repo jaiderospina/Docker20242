@@ -7,7 +7,8 @@ Tener instalado docker.
 ## Paso 1: Instalar e iniciar Docker
 Una vez tienes tu instancia y acceso a SSH de la misma, ingresa a la misma. Ejecuta como root o con permisos de root el siguiente comando, para actualizar los repositorios en la máquina virtual recién creada:
 ```
-apt-get update
+apt update
+apt  upgrade
 ```
 Luego ejecuta el siguiente comando para instalar Docker 
 ```

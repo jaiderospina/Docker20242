@@ -33,6 +33,10 @@ docker run -d \
   -e MYSQL_PASSWORD=mi_contraseña \
   -v mysql_data:/var/lib/mysql \
   mysql:8.0
+
+****
+docker run -d --name mi-mysql --network mi-red-app -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_DATABASE=mi_base_datos -e MYSQL_USER=mi_usuario -e MYSQL_PASSWORD=mi_contraseña -v mysql_data:/var/lib/mysql   mysql:8.0
+
 ```
 
 Explicación de los parámetros:
